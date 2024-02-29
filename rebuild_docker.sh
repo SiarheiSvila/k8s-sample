@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 ./gradlew clean bootJar
-docker build -ti siarheisvila/sample-application:1.0.0 ./
+docker build -t siarheisvila/sample-application:1.0.0 ./
 docker login
 docker push siarheisvila/sample-application:1.0.0
 ## docker pull siarheisvila/sample-application:1.0.0
